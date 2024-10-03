@@ -1,46 +1,39 @@
 "use strict";
-function addList() {
-    let list = document.getElementById("list");
-    let labellist = document.getElementById("labellist");
-    let newElement = document.createElement("li");
-    newElement.innerHTML = labellist.value;
-    list.append(newElement);
-    labellist.value = "";
-}
-function RemoveList() {
-    let list = document.getElementById("list");
-    let removelabellist = document.getElementById("removelabellist");
-    let indexNum = parseInt(removelabellist.value);
-    if (list.children.length <= indexNum || indexNum == 0) {
-        alert("numero invalido");
-        return;
-    }
-    list.children[indexNum - 1].remove();
-}
-function AddtoDiv() {
-    let div = document.getElementById("divP");
-    let inPText = document.getElementById("inPText");
-    let radioNormal1 = document.getElementById("radioelim");
-    let radioBold = document.getElementById("radiobold");
-    let radioItalic = document.getElementById("radStyleItalic");
-    let checkBlue = document.getElementById("checkBlue");
-    let checkBorder = document.getElementById("checkBorder");
-    let nuevoElemento2 = document.createElement("p");
-    div.append(nuevoElemento2);
-    nuevoElemento2.innerHTML = inPText.value;
-    if (radioBold.checked)
-        nuevoElemento2.style.fontWeight = "bold";
-}
 function BotonResultado(tecla) {
     let resultado = document.getElementById("resultado");
-    let borrar = "";
-    let primerNumero = null; // Guardar el primer número
-    resultado.value += tecla;
+    //let borrar = "";
+    /*resultado.value += tecla;
+
+
     if (tecla === "+") {
         primerNumero = parseFloat(resultado.value);
         borrar = tecla;
-        //resultado.value = ""; 
+        //resultado.value = "";
+    } else if (tecla === "=") {
+        
+    }*/
+    //let primerNumero: number = 0;
+    //let segundoNumero: number = 0;
+    //let display: string = "";
+    //let res = 0;
+    //let lastElement = resultado.value.slice(-1);
+    if (tecla === "=") {
+        resultado.value = eval(resultado.value);
     }
-    else if (tecla === "=") {
+    else if (tecla === "ac") {
+        resultado.value = "";
+    }
+    else if (tecla === "%") {
+        let num = parseFloat(resultado.value);
+        resultado.value = (num / 10).toString();
+    }
+    else if (tecla === "delete") {
+        //lastElement;
+        //resultado.splice()
+        resultado.value = resultado.value.slice(0, -1);
+        ;
+    }
+    else {
+        resultado.value += tecla;
     }
 }
