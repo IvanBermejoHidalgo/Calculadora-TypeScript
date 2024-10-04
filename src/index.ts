@@ -16,7 +16,7 @@ function BotonResultado(tecla: string) {
     } else if (tecla === "delete") {
         resultado.value = resultado.value.slice(0,-1);
         results = false;
-    } else if (results == false) {
+    } else if (results) {
         resultado.value = tecla;
         results = false;
     } else {
