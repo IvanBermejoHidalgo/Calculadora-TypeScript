@@ -19,7 +19,7 @@ function BotonResultado(tecla: string) {
     } else if (results) {
         resultado.value = tecla;
         results = false;
-    } else if (results === true) {
+    } else if (results == true) {
         results = false;
         resultado.value += tecla;
         results = false;
