@@ -20,7 +20,16 @@ function BotonResultado(tecla: string) {
         resultado.value = tecla;
         results = false;
     } else {
-        resultado.value += tecla;
+        if (results) {
+            if (tecla >= '0' && tecla <= '9') {
+                resultado.value = tecla;
+            } else {
+                resultado.value += tecla;
+            }
+            results = false;
+        } else {
+            resultado.value += tecla;
+        }
     }
 
 }
