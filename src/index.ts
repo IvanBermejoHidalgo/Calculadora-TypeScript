@@ -6,6 +6,7 @@ function BotonResultado(tecla: string) {
     if (tecla === "=") {
         resultado.value = eval(resultado.value);
         results = true;
+        
     } else if (tecla === "ac"){
         resultado.value = "";
         results = false;
@@ -15,9 +16,6 @@ function BotonResultado(tecla: string) {
         results = true;
     } else if (tecla === "delete") {
         resultado.value = resultado.value.slice(0,-1);
-        results = false;
-    } else if (results) {
-        resultado.value = tecla;
         results = false;
     } else {
         if (results) {
