@@ -20,7 +20,6 @@ function BotonResultado(tecla) {
         results = false;
     }else {
         if (results) {
-            console.log(tecla);
             if (tecla >= '0' && tecla <= '9') {
                 resultado.value = tecla;
             } else {
