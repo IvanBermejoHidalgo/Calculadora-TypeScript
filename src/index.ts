@@ -2,7 +2,6 @@ let results = false;
 
 function BotonResultado(tecla: string) {
     let resultado: HTMLInputElement = document.getElementById("resultado")! as HTMLInputElement;
-
     if (tecla === "=") {
         resultado.value = eval(resultado.value);
         results = true;
