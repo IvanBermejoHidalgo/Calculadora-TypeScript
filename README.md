@@ -9,6 +9,11 @@ Este proyecto es una **calculadora** básica escrita en **TypeScript** que permi
 - Multiplicación
 - División (con manejo de división por cero)
 
+## Vista de la Calculadora
+
+![Calculadora](calculadora.png)
+
+
 ## Estructura del Proyecto
 
 ```bash
@@ -18,3 +23,5 @@ Este proyecto es una **calculadora** básica escrita en **TypeScript** que permi
 ├── style.css           # Fichero de personalización
 ├── tsconfig.json       # Configuración de TypeScript
 └── README.md           # Descripción del proyecto
+
+
