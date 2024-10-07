@@ -13,8 +13,8 @@ Este proyecto es una **calculadora** básica escrita en **TypeScript** que permi
 
 ```bash
 ├── src
-│   ├── calculator.ts   # Lógica principal de la calculadora
-│   ├── index.ts        # Punto de entrada del programa
+│   ├── index.ts    # Lógica principal de la calculadora
+├── index.html          # Punto de entrada del programa
+├── style.css           # Fichero de personalización
 ├── tsconfig.json       # Configuración de TypeScript
-├── package.json        # Dependencias y scripts del proyecto
 └── README.md           # Descripción del proyecto
