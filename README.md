@@ -17,7 +17,7 @@ Este proyecto es una **calculadora** básica escrita en **TypeScript** que permi
 - Suma
 - Resta
 - Multiplicación
-- División (con manejo de división por cero)
+- División
 
 ## Vista de la Calculadora
 
